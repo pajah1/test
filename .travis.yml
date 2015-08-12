@@ -1,0 +1,8 @@
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install qt5-default qt5-qmake
+
+script:
+ - qmake -project
+ - qmake test.pro
+ - make
